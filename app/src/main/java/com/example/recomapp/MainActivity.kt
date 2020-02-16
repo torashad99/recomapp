@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        fab.setOnClickListener {
+        results.setOnClickListener {
             val intent = Intent(this, SearchResult::class.java)
             startActivity(intent)
         }
